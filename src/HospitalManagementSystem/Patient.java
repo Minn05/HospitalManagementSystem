@@ -17,7 +17,7 @@ public class Patient {
 
     public void addPatient(){
         System.out.print("Enter Patient Name: ");
-        String name = scanner.next();
+        String name = scanner.nextLine();
         System.out.print("Enter Patient Age: ");
         int age = scanner.nextInt();
         System.out.print("Enter Patient Gender: ");
@@ -58,7 +58,6 @@ public class Patient {
                 String gender = resultSet.getString("gender");
                 System.out.printf("|%-12s|%-20s|%-10s|%-12s|\n", id, name, age, gender);
                 System.out.println("+------------+--------------------+----------+------------+");
-
             }
 
         }catch(SQLException e){

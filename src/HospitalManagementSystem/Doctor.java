@@ -29,9 +29,6 @@ public class Doctor {
                 String specialization = resultSet.getString("specialization");
                 System.out.printf("|%-12s|%-20s|%-18s|\n", id, name, specialization);
                 System.out.println("+------------+--------------------+------------------+");
-
-
-
             }
 
         }catch(SQLException e){
